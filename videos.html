@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Videos Gallery</title>
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        video {
+            width: 100%;
+            border: 1px solid #333;
+        }
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: none;
+            background: #333;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+        .home-link:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Videos Gallery</h1>
+    <div class="gallery">
+        <video controls src="videos/v1.mp4"></video>
+        <video controls src="videos/v2.mp4"></video>
+        <video controls src="videos/v3.mp4"></video>
+        <video controls src="videos/v4.mp4"></video>
+        <video controls src="videos/v5.mp4"></video>
+        <video controls src="videos/v6.mp4"></video>
+        <video controls src="videos/v7.mp4"></video>
+    </div>
+    <a class="home-link" href="index.html">Back to Homepage</a>
+</body>
+</html>
