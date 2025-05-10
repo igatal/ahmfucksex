@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Leaks Gallery - Home</title>
+    <title>Leak Hub - Home</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #111;
+            background: #000000;
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -19,6 +19,18 @@
             margin-bottom: 30px;
             font-size: 3em;
         }
+        .leaks-part {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 8px 0 0 8px;
+        }
+        .gallery-part {
+            background-color: #F0950C;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 0 8px 8px 0;
+        }
         .links {
             display: flex;
             flex-direction: column;
@@ -27,20 +39,24 @@
         a {
             text-decoration: none;
             color: #fff;
-            background: #333;
+            background: #F0950C;
             padding: 15px 30px;
             border-radius: 8px;
             font-size: 1.2em;
             transition: background 0.3s, transform 0.2s;
         }
         a:hover {
-            background: #555;
+            background: #F0950C;
             transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <h1>Leaks Gallery</h1>
+    <h1>
+        <span class="leaks-part">Leaks</span>
+        <span class="gallery-part">Hub</span>
+    </h1>
+    <h5>v: 1.0</h5>
     <div class="links">
         <a href="photos.html">View Photos</a>
         <a href="videos.html">Watch Videos</a>
